@@ -6,12 +6,12 @@ import * as firebase from 'firebase';
 
   // Initialize Firebase
 var firebaseconfig = {
-    apiKey: "AIzaSyCcxeaL8nf8NJMECvs5YvdBWJEIHYvEKj0",
-    authDomain: "react-firebase-87e9a.firebaseapp.com",
-    databaseURL: "https://react-firebase-87e9a.firebaseio.com",
-    projectId: "react-firebase-87e9a",
-    storageBucket: "",
-    messagingSenderId: "309902025385"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATA_BASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID
   };
 firebase.initializeApp(firebaseconfig);
 
